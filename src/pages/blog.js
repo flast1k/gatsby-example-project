@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
+
 import Layout from '../components/Layout';
 
-export default function Home() {
+const Blog = () => {
   return (
     <Layout>
-      Hello world!<Link to="/blog/">blog page</Link>
+      Hello from blog page<Link to="/">back home</Link>
     </Layout>
   );
-}
+};
+
+export default Blog;
