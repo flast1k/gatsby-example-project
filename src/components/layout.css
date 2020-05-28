@@ -1,0 +1,12 @@
+h1 {
+  color: blue;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.links {
+  color: red;
+}
