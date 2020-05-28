@@ -8,6 +8,13 @@ export default function Home() {
     <Layout>
       Hello world!<Link to="/blog/">blog page</Link>
       <h1>hello styling</h1>
+      <div className="container">
+        <div className="row">
+          <div className="col-4">Hello</div>
+          <div className="col-4">Hello</div>
+          <div className="col-4">Hello</div>
+        </div>
+      </div>
     </Layout>
   );
 }
