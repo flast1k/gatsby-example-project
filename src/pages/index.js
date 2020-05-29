@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import SimpleHero from '../components/SimpleHero';
 import Banner from '../components/Banner';
 import About from '../components/Home/About';
+import Services from '../components/Home/Services';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         </Banner>
       </SimpleHero>
       <About />
+      <Services />
     </Layout>
   );
 }
