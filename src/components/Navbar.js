@@ -30,13 +30,11 @@ const Navbar = () => {
               : `${styles.navLinks}`
           }
         >
-          {links.map((item, index) => {
-            return (
-              <li key={index}>
-                <Link to={item.path}>{item.text}</Link>
-              </li>
-            );
-          })}
+          {links.map((item, index) => (
+            <li key={index}>
+              <Link to={item.path}>{item.text}</Link>
+            </li>
+          ))}
         </ul>
         <div className={styles.navSocialLinks}>
           {socialIcons.map((item, index) => (
