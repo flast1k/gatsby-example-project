@@ -8,7 +8,8 @@ const Tours = () => {
     <Layout>
       Hello from tours page
       <div>
-        <Button>Hello from styled</Button>
+        <Button big>first button</Button>
+        <Button color="#f15025">second button</Button>
       </div>
     </Layout>
   );
