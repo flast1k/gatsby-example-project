@@ -16,8 +16,6 @@ module.exports = {
     },
   },
   plugins: [
-    'gatsby-plugin-sass',
-    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -25,5 +23,9 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
   ],
 };
