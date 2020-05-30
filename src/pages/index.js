@@ -8,8 +8,6 @@ import Services from '../components/Home/Services';
 import StyledHero from '../components/StyledHero';
 
 export default function Home({ data }) {
-  console.log(data);
-
   return (
     <Layout>
       <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
