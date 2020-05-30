@@ -10,6 +10,7 @@ const Contact = () => {
       <div className={styles.center}>
         <form className={styles.form}>
           <div>
+            <label htmlFor="name">name</label>
             <input
               type="text"
               name="name"
@@ -19,6 +20,7 @@ const Contact = () => {
             />
           </div>
           <div>
+            <label htmlFor="email">email</label>
             <input
               type="email"
               name="email"
@@ -28,6 +30,7 @@ const Contact = () => {
             />
           </div>
           <div>
+            <label htmlFor="message">message</label>
             <textarea
               name="message"
               id="message"
