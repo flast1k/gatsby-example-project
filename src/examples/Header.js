@@ -21,6 +21,7 @@ const Header = () => {
     site: { siteMetadata },
   } = useStaticQuery(getSiteData);
   console.log(siteMetadata);
+
   return (
     <div>
       <h1>title:{siteMetadata.title}</h1>
