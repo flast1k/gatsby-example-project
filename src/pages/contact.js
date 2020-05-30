@@ -4,11 +4,13 @@ import { graphql } from 'gatsby';
 import StyledHero from '../components/StyledHero';
 
 import Layout from '../components/Layout';
+import ContactForm from '../components/Contact/Contact';
 
 const Contact = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.connectBcg.childImageSharp.fluid} />
+      <ContactForm />
     </Layout>
   );
 };
