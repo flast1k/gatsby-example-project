@@ -16,6 +16,7 @@ const Contact = () => {
           <div>
             <label htmlFor="name">name</label>
             <input
+              aria-label="name"
               type="text"
               name="name"
               id="name"
@@ -26,6 +27,7 @@ const Contact = () => {
           <div>
             <label htmlFor="email">email</label>
             <input
+              aria-label="email"
               type="email"
               name="email"
               id="email"
@@ -36,6 +38,7 @@ const Contact = () => {
           <div>
             <label htmlFor="message">message</label>
             <textarea
+              aria-label="message"
               name="message"
               id="message"
               rows="10"
@@ -45,6 +48,7 @@ const Contact = () => {
           </div>
           <div>
             <input
+              aria-label="submit here"
               type="submit"
               value="submit here"
               className={styles.submit}
