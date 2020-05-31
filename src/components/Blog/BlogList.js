@@ -28,7 +28,6 @@ const getPosts = graphql`
 
 const BlogList = () => {
   const { posts } = useStaticQuery(getPosts);
-  console.log(posts);
 
   return (
     <section className={styles.blog}>
