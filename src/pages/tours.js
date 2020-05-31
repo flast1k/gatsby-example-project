@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 
 import StyledHero from '../components/StyledHero';
+import ToursComponent from '../components/Tours/Tours';
 
 import Layout from '../components/Layout';
 
@@ -10,6 +11,7 @@ class Tours extends Component {
     return (
       <Layout>
         <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
+        <ToursComponent />
       </Layout>
     );
   }
