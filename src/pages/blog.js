@@ -2,13 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import StyledHero from '../components/StyledHero';
-
 import Layout from '../components/Layout';
+import BlogList from '../components/Blog/BlogList';
 
 const Blog = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.blogBcg.childImageSharp.fluid} />
+      <BlogList />
     </Layout>
   );
 };
