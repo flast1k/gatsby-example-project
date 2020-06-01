@@ -53,4 +53,24 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
+  // amount of posts
+  const posts = data.posts.edges;
+  // posts per page
+  const postsPerPage = 5;
+  // how many pages
+  const numPages = Math.ceil(posts.length / postsPerPage);
+
+  Array.from({ length: numPages }).forEach((_, i) => {
+    const currentPage = i + 1;
+    createPage({
+      path: i === 0 ? 'blogs' : `blogs/${currentPage}`,
+      component: path.resolve('./src/templates/blog-list-template.js'),
+      context: {
+        limit: postsPerPage,
+        skip: postsPerPage * i,
+        numPages,
+        currentPage,
+      },
+    });
+  });
 };
