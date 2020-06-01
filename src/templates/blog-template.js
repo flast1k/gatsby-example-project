@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import Layout from '../components/Layout';
 
@@ -18,7 +19,10 @@ const BlogTemplate = ({ data }) => {
       <section className={styles.blog}>
         <div className={styles.center}>
           <h1>{title}</h1>
-
+          <h4>published at: {published}</h4>
+          <article className={styles.post}>
+            {documentToReactComponents(json)}
+          </article>
           <AniLink fade to="/blog" className="btn-primary">
             all posts
           </AniLink>
