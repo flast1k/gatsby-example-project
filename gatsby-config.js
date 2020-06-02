@@ -13,10 +13,9 @@ module.exports = {
     description:
       'Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure',
     author: '@flast1k',
-    data: {
-      name: 'Artem',
-      age: 29,
-    },
+    twitterUsername: '@flast1k',
+    image: '/defaultBcg.jpeg',
+    siteUrl: 'https://flast1k-gatsby-tours.netlify.app',
   },
   plugins: [
     {
@@ -39,5 +38,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-transition-link',
     'gatsby-plugin-playground',
+    'gatsby-plugin-react-helmet',
   ],
 };
