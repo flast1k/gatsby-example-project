@@ -13,7 +13,7 @@ import Seo from '../components/SEO';
 export default function Home({ data }) {
   return (
     <Layout>
-      <Seo title="home" description="this is description" />
+      <Seo title="Home" />
       <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
         <Banner
           title="continue exploring"
