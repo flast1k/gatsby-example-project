@@ -7,6 +7,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+const siteUrl = 'https://flast1k-gatsby-tours.netlify.app';
+
 module.exports = {
   siteMetadata: {
     title: 'BackRoads',
@@ -15,7 +17,7 @@ module.exports = {
     author: '@flast1k',
     twitterUsername: '@flast1k',
     image: '/defaultBcg.jpeg',
-    siteUrl: 'https://flast1k-gatsby-tours.netlify.app',
+    siteUrl,
   },
   plugins: [
     {
@@ -32,6 +34,14 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteUrl,
+        sitemap: `${siteUrl}/sitemap.xml`,
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
@@ -39,5 +49,6 @@ module.exports = {
     'gatsby-plugin-transition-link',
     'gatsby-plugin-playground',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
   ],
 };
