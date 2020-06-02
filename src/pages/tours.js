@@ -5,11 +5,13 @@ import StyledHero from '../components/StyledHero';
 import ToursComponent from '../components/Tours/Tours';
 
 import Layout from '../components/Layout';
+import Seo from '../components/SEO';
 
 class Tours extends Component {
   render() {
     return (
       <Layout>
+        <Seo title="Tours" />
         <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
         <ToursComponent />
       </Layout>

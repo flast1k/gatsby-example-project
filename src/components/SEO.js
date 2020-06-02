@@ -23,7 +23,6 @@ const Seo = ({ title, description }) => {
   const {
     siteTitle,
     siteDesc,
-    author,
     siteUrl,
     image,
     twitterUsername,

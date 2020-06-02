@@ -5,10 +5,12 @@ import StyledHero from '../components/StyledHero';
 
 import Layout from '../components/Layout';
 import ContactForm from '../components/Contact/Contact';
+import Seo from '../components/SEO';
 
 const Contact = ({ data }) => {
   return (
     <Layout>
+      <Seo title="Contact" />
       <StyledHero img={data.connectBcg.childImageSharp.fluid} />
       <ContactForm />
     </Layout>

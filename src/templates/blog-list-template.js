@@ -7,6 +7,7 @@ import BlogCard from '../components/Blog/BlogCard';
 import Title from '../components/Title';
 
 import styles from '../css/blog.module.css';
+import Seo from '../components/SEO';
 
 const BlogListTemplate = props => {
   const { currentPage, numPages } = props.pageContext;
@@ -21,6 +22,7 @@ const BlogListTemplate = props => {
 
   return (
     <Layout>
+      <Seo title="Blogs" />
       <section className={styles.blog}>
         <Title title="latest" subtitle="posts" />
         <div className={styles.center}>

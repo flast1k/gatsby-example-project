@@ -9,6 +9,7 @@ import StyledHero from '../components/StyledHero';
 import Day from '../components/SingleTour/Day';
 
 import styles from '../css/template.module.css';
+import Seo from '../components/SEO';
 
 const TourTemplate = ({ data }) => {
   const {
@@ -24,6 +25,7 @@ const TourTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <Seo title={name} />
       <StyledHero img={mainImage.fluid} />
       <section className={styles.template}>
         <div className={styles.center}>
