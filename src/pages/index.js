@@ -8,10 +8,12 @@ import About from '../components/Home/About';
 import Services from '../components/Home/Services';
 import StyledHero from '../components/StyledHero';
 import FeaturedTours from '../components/Home/FeaturedTours';
+import Seo from '../components/SEO';
 
 export default function Home({ data }) {
   return (
     <Layout>
+      <Seo title="home" description="this is description" />
       <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
         <Banner
           title="continue exploring"
